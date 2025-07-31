@@ -17,13 +17,16 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 # Simple in-memory storage for notes
-notes_storage = [
-    {"id": 1, "content": "这是郭颂的测试笔记", "created": "2024-01-01"},
-    {"id": 2, "content": "MCP 服务器测试", "created": "2024-01-02"},
-    {"id": 3, "content": "Python FastMCP 学习笔记", "created": "2024-01-03"},
-    {"id": 4, "content": "北京测试", "created": "2024-01-04"},
-    {"id": 5, "content": "上海测试", "created": "2024-01-04"}
-]
+notes_storage = []
+
+def reset_notes():
+    """Reset notes storage to empty"""
+    global notes_storage
+    notes_storage.clear()
+    logger.info("Notes storage reset to empty")
+
+# Reset notes on startup
+reset_notes()
 
 # Create FastMCP instance
 mcp = FastMCP(
@@ -77,6 +80,41 @@ def add_note(content: str) -> str:
     notes_storage.append(new_note)
     logger.info(f"Note added successfully with ID: {new_id}")
     return f"笔记已添加: ID {new_id}, 内容: {content}"
+
+@mcp.tool()
+def delete_note(note_id: int) -> str:
+    """Delete a note by ID"""
+    logger.info(f"delete_note called with ID: {note_id}")
+    
+    # Find the note with the specified ID
+    note_to_delete = None
+    for note in notes_storage:
+        if note['id'] == note_id:
+            note_to_delete = note
+            break
+    
+    if note_to_delete is None:
+        logger.warning(f"Note with ID {note_id} not found")
+        return f"未找到ID为 {note_id} 的笔记"
+    
+    # Remove the note from storage
+    notes_storage.remove(note_to_delete)
+    logger.info(f"Note with ID {note_id} deleted successfully")
+    return f"笔记已删除: ID {note_id}, 内容: {note_to_delete['content']}"
+
+@mcp.tool()
+def clear_all_notes() -> str:
+    """Clear all notes"""
+    logger.info("clear_all_notes called")
+    
+    if not notes_storage:
+        logger.info("No notes to clear")
+        return "没有笔记需要清空"
+    
+    note_count = len(notes_storage)
+    notes_storage.clear()
+    logger.info(f"All {note_count} notes cleared successfully")
+    return f"已清空所有 {note_count} 条笔记"
 
 if __name__ == "__main__":
     logger.info("Starting MCP server...")

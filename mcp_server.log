@@ -1,0 +1,51 @@
+[LOG] 2025-07-31 18:21:46,758 | DEBUG | Initializing server 'Notes App'
+[LOG] 2025-07-31 18:21:46,759 | DEBUG | Registering handler for ListToolsRequest
+[LOG] 2025-07-31 18:21:46,759 | DEBUG | Registering handler for CallToolRequest
+[LOG] 2025-07-31 18:21:46,759 | DEBUG | Registering handler for ListResourcesRequest
+[LOG] 2025-07-31 18:21:46,759 | DEBUG | Registering handler for ReadResourceRequest
+[LOG] 2025-07-31 18:21:46,759 | DEBUG | Registering handler for PromptListRequest
+[LOG] 2025-07-31 18:21:46,759 | DEBUG | Registering handler for GetPromptRequest
+[LOG] 2025-07-31 18:21:46,759 | DEBUG | Registering handler for ListResourceTemplatesRequest
+[LOG] 2025-07-31 18:21:46,764 | INFO | Starting MCP server...
+[LOG] 2025-07-31 18:21:46,768 | DEBUG | Using selector: KqueueSelector
+[LOG] 2025-07-31 18:22:00,072 | DEBUG | Initializing server 'Notes App'
+[LOG] 2025-07-31 18:22:00,072 | DEBUG | Registering handler for ListToolsRequest
+[LOG] 2025-07-31 18:22:00,072 | DEBUG | Registering handler for CallToolRequest
+[LOG] 2025-07-31 18:22:00,072 | DEBUG | Registering handler for ListResourcesRequest
+[LOG] 2025-07-31 18:22:00,072 | DEBUG | Registering handler for ReadResourceRequest
+[LOG] 2025-07-31 18:22:00,072 | DEBUG | Registering handler for PromptListRequest
+[LOG] 2025-07-31 18:22:00,072 | DEBUG | Registering handler for GetPromptRequest
+[LOG] 2025-07-31 18:22:00,072 | DEBUG | Registering handler for ListResourceTemplatesRequest
+[LOG] 2025-07-31 18:22:00,078 | INFO | Starting MCP server...
+[LOG] 2025-07-31 18:22:00,081 | DEBUG | Using selector: KqueueSelector
+[LOG] 2025-07-31 18:22:17,461 | DEBUG | Initializing server 'Notes App'
+[LOG] 2025-07-31 18:22:17,461 | DEBUG | Registering handler for ListToolsRequest
+[LOG] 2025-07-31 18:22:17,461 | DEBUG | Registering handler for CallToolRequest
+[LOG] 2025-07-31 18:22:17,461 | DEBUG | Registering handler for ListResourcesRequest
+[LOG] 2025-07-31 18:22:17,461 | DEBUG | Registering handler for ReadResourceRequest
+[LOG] 2025-07-31 18:22:17,461 | DEBUG | Registering handler for PromptListRequest
+[LOG] 2025-07-31 18:22:17,461 | DEBUG | Registering handler for GetPromptRequest
+[LOG] 2025-07-31 18:22:17,461 | DEBUG | Registering handler for ListResourceTemplatesRequest
+[LOG] 2025-07-31 18:22:17,475 | INFO | Starting MCP server...
+[LOG] 2025-07-31 18:22:17,478 | DEBUG | Using selector: KqueueSelector
+[LOG] 2025-07-31 18:22:24,232 | DEBUG | Initializing server 'Notes App'
+[LOG] 2025-07-31 18:22:24,232 | DEBUG | Registering handler for ListToolsRequest
+[LOG] 2025-07-31 18:22:24,232 | DEBUG | Registering handler for CallToolRequest
+[LOG] 2025-07-31 18:22:24,232 | DEBUG | Registering handler for ListResourcesRequest
+[LOG] 2025-07-31 18:22:24,232 | DEBUG | Registering handler for ReadResourceRequest
+[LOG] 2025-07-31 18:22:24,232 | DEBUG | Registering handler for PromptListRequest
+[LOG] 2025-07-31 18:22:24,232 | DEBUG | Registering handler for GetPromptRequest
+[LOG] 2025-07-31 18:22:24,232 | DEBUG | Registering handler for ListResourceTemplatesRequest
+[LOG] 2025-07-31 18:22:24,237 | INFO | Starting MCP server...
+[LOG] 2025-07-31 18:22:24,240 | DEBUG | Using selector: KqueueSelector
+[LOG] 2025-07-31 18:22:38,242 | INFO | Notes storage reset to empty
+[LOG] 2025-07-31 18:22:38,243 | DEBUG | Initializing server 'Notes App'
+[LOG] 2025-07-31 18:22:38,243 | DEBUG | Registering handler for ListToolsRequest
+[LOG] 2025-07-31 18:22:38,243 | DEBUG | Registering handler for CallToolRequest
+[LOG] 2025-07-31 18:22:38,244 | DEBUG | Registering handler for ListResourcesRequest
+[LOG] 2025-07-31 18:22:38,244 | DEBUG | Registering handler for ReadResourceRequest
+[LOG] 2025-07-31 18:22:38,244 | DEBUG | Registering handler for PromptListRequest
+[LOG] 2025-07-31 18:22:38,244 | DEBUG | Registering handler for GetPromptRequest
+[LOG] 2025-07-31 18:22:38,244 | DEBUG | Registering handler for ListResourceTemplatesRequest
+[LOG] 2025-07-31 18:22:38,247 | INFO | Starting MCP server...
+[LOG] 2025-07-31 18:22:38,250 | DEBUG | Using selector: KqueueSelector
