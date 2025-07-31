@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "notes-app": {
+      "command": "python",
+      "args": ["main.py"],
+      "cwd": "/Users/guosong/Desktop/Sina/Code/test_mcp",
+      "env": {
+        "PYTHONPATH": "/Users/guosong/Desktop/Sina/Code/test_mcp"
+      }
+    }
+  }
+} 
