@@ -1,12 +1,36 @@
 {
   "mcpServers": {
-    "notes-app": {
-      "command": "python",
-      "args": ["main.py"],
-      "cwd": "/Users/guosong/Desktop/Sina/Code/test_mcp",
+    "Notion": {
+      "url": "https://mcp.notion.com/mcp",
+      "headers": {}
+    },
+    "DBHub": {
+      "command": "npx @bytebase/dbhub",
       "env": {
-        "PYTHONPATH": "/Users/guosong/Desktop/Sina/Code/test_mcp"
+        "TRANSPORT": "stdio",
+        "DSN": "mysql://root:rootXXX@10.XXXX.116:8000/test?ssl-mode=DISABLED",
+        "READONLY": "false"
+      },
+      "args": []
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "XXXX",
+        "GITHUB_USERNAME": "dolphinsboy",
+        "TRANSPORT": "stdio"
+      }
+    },
+    "notes-app": {
+      "command": "python3",
+      "args": ["/Users/guosong/Desktop/Sina/Code/test_mcp/main.py"],
+      "env": {
+        "TRANSPORT": "stdio"
       }
     }
   }
-} 
+}
